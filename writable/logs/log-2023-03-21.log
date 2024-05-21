@@ -1,0 +1,20 @@
+CRITICAL - 2023-03-21 05:59:00 --> Undefined array key "email"
+in APPPATH/Views/management.php on line 87.
+ 1 APPPATH/Views/management.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH/Views/management.php', 87)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/management.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('management', [], true)
+ 5 APPPATH/Controllers/Management.php(42): view('management', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Management->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-21 06:47:56 --> Undefined array key "employees"
+in APPPATH/Controllers/Employees.php on line 234.
+ 1 APPPATH/Controllers/Employees.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employees"', 'APPPATH/Controllers/Employees.php', 234)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->assignEmployeesToProject()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

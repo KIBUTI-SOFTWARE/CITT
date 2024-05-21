@@ -1,0 +1,1501 @@
+ERROR - 2022-12-05 06:34:43 --> mysqli_sql_exception: Not unique table/alias: 'states' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:34:43 --> Not unique table/alias: 'states'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 06:36:36 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:36:36 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 06:40:57 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:40:57 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 06:40:58 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:40:58 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 06:40:59 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:40:59 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 06:40:59 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 06:40:59 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = \'US221202353908764\'
+AND `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+WHERE `user` = :user:
+AND `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:41:54 --> Undefined array key "state_name"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "state_name"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(65): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:47:59 --> Undefined array key "state_name"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "state_name"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(67): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:48:01 --> Undefined array key "state_name"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "state_name"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(67): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:51:39 --> Undefined array key "name"
+in APPPATH/Views/transfers.php on line 58.
+ 1 APPPATH/Views/transfers.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/transfers.php', 58)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(66): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:52:01 --> Undefined array key "name"
+in APPPATH/Views/transfers.php on line 58.
+ 1 APPPATH/Views/transfers.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/transfers.php', 58)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(66): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:52:02 --> Undefined array key "name"
+in APPPATH/Views/transfers.php on line 58.
+ 1 APPPATH/Views/transfers.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/transfers.php', 58)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(66): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:53:29 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 55.
+ 1 APPPATH/Views/transfers.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 55)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:54:10 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:54:11 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 06:59:09 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 07:04:25 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 07:04:26 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 07:04:26 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 07:05:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`' at line 3 in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 07:05:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`', [], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 07:06:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`' at line 3 in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 07:06:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `transfers`.`user_id` = `user`.`user_id`', [], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 07:07:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`' at line 3 in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 07:07:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+OUTER JOIN `user` ON `user`.`user_id` = `transfers`.`user_id`', [], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 07:14:12 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(47): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 07:14:12 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `user` = \'US221202357104172\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `user` = \'US221202357104172\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `user` = \'US221202357104172\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `user` = :user:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(47): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 07:14:29 --> Undefined array key "user_id"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 07:25:17 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(64): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:23:06 --> mysqli_sql_exception: Unknown column 'country_id' in 'order clause' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(32): App\Models\TransfersModel->getTransfers()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 11:23:06 --> Unknown column 'country_id' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+WHERE `deleted_flag` = 0
+ORDER BY `country_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+WHERE `deleted_flag` = 0
+ORDER BY `country_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+WHERE `deleted_flag` = 0
+ORDER BY `country_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+WHERE `deleted_flag` = :deleted_flag:
+ORDER BY `country_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(32): App\Models\TransfersModel->getTransfers()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:23:34 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 4 APPPATH/Controllers/Transfers.php(56): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:24:28 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(20, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(20, 0)
+ 4 APPPATH/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:24:29 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(20, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(20, 0)
+ 4 APPPATH/Controllers/Transfers.php(32): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:29:37 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 11:29:37 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = :deleted_flag:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:29:58 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 11:29:58 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = 0
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `deleted_flag` = :deleted_flag:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:31:04 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 11:31:04 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1
+ORDER BY `transfer_id` ASC', [], false)
+ 5 APPPATH/Models/TransfersModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:34:37 --> Call to undefined method stdClass::paginate()
+in APPPATH/Controllers/Transfers.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:37:51 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(37): CodeIgniter\BaseModel->paginate()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 11:37:51 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(37): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:41:32 --> mysqli_sql_exception: Not unique table/alias: 'cities' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 11:41:32 --> Not unique table/alias: 'cities'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `cities` ON `transfers`.`destination_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `states` ON `transfers`.`destination_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `cities` ON `transfers`.`destination_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `states` ON `transfers`.`destination_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `cities` ON `transfers`.`destination_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `states` ON `transfers`.`destination_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `cities` ON `transfers`.`destination_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `states` ON `transfers`.`destination_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+ORDER BY `transfer_id` ASC', [], false)
+ 5 APPPATH/Models/TransfersModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(27): App\Models\TransfersModel->getTransfers()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:43:36 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(70): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:43:42 --> Undefined array key "firstname"
+in APPPATH/Views/transfers.php on line 56.
+ 1 APPPATH/Views/transfers.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/transfers.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(70): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 11:49:07 --> Undefined variable $pager
+in APPPATH/Views/transfers.php on line 95.
+ 1 APPPATH/Views/transfers.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH/Views/transfers.php', 95)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfers.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfers', [], true)
+ 5 APPPATH/Controllers/Transfers.php(62): view('transfers', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:51:16 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(43): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 11:51:16 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(43): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 11:56:10 --> mysqli_sql_exception: Not unique table/alias: 'states' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(44): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2022-12-05 11:56:10 --> Not unique table/alias: 'states'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_municipality`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_municipality`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_municipality`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transfers`
+LEFT JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+JOIN `states` ON `states`.`state_id` = `transfers`.`origin_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`origin_municipality`
+JOIN `states` ON `states`.`state_id` = `transfers`.`destination_region`
+JOIN `cities` ON `cities`.`city_id` = `transfers`.`destination_municipality`', [], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Transfers.php(44): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 12:27:43 --> Call to undefined method App\Models\TransfersModel::searchTransfer
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Transfers.php(256): CodeIgniter\Model->__call('searchTransfer', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 13:03:23 --> whereNotIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 907.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('user', 'US221202357104172', true, 'AND ', null)
+ 2 APPPATH/Models/TransfersModel.php(26): CodeIgniter\Database\BaseBuilder->whereNotIn('user', 'US221202357104172')
+ 3 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 13:30:36 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$w
+in APPPATH/Models/TransfersModel.php on line 27.
+ 1 APPPATH/Models/TransfersModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Builder::$w', 'APPPATH/Models/TransfersModel.php', 27)
+ 2 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 15:54:05 --> Undefined array key "user"
+in APPPATH/Controllers/Transfers.php on line 237.
+ 1 APPPATH/Controllers/Transfers.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Transfers.php', 237)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 15:56:48 --> mysqli_sql_exception: Unknown column 'proffessions' in 'where clause' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 15:56:48 --> Unknown column 'proffessions' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+WHERE `proffessions` != \'PR221202934305199\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+WHERE `proffessions` != \'PR221202934305199\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+WHERE `proffessions` != \'PR221202934305199\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+WHERE `proffessions` != :proffessions:', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 16:02:40 --> mysqli_sql_exception: Column 'proffession' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 16:02:40 --> Column 'proffession' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = :origin_region:
+AND `origin_municipality` = :origin_municipality:
+AND `destination_region` = :destination_region:
+AND `destination_municipality` = :destination_municipality:
+AND `proffession` = :proffession:
+AND `user` != :user:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 16:03:09 --> mysqli_sql_exception: Column 'proffession' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 16:03:09 --> Column 'proffession' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = :origin_region:
+AND `origin_municipality` = :origin_municipality:
+AND `destination_region` = :destination_region:
+AND `destination_municipality` = :destination_municipality:
+AND `proffession` = :proffession:
+AND `user` != :user:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 16:03:12 --> mysqli_sql_exception: Column 'proffession' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 16:03:12 --> Column 'proffession' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `proffession` = \'PR221202934305199\'
+AND `user` != \'US221202357104172\'
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+WHERE `origin_region` = :origin_region:
+AND `origin_municipality` = :origin_municipality:
+AND `destination_region` = :destination_region:
+AND `destination_municipality` = :destination_municipality:
+AND `proffession` = :proffession:
+AND `user` != :user:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-05 16:05:07 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-05 16:05:07 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `user` != \'US221202357104172\'
+AND `deleted_flag` = 1
+ORDER BY `transfer_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `user` != \'US221202357104172\'
+AND `deleted_flag` = 1
+ORDER BY `transfer_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = \'3505\'
+AND `origin_municipality` = \'39768\'
+AND `destination_region` = \'3506\'
+AND `destination_municipality` = \'48321\'
+AND `user` != \'US221202357104172\'
+AND `deleted_flag` = 1
+ORDER BY `transfer_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transfers`
+JOIN `user` ON `transfers`.`user` = `user`.`user_id`
+JOIN `cities` ON `transfers`.`origin_municipality` = `cities`.`city_id`
+JOIN `states` ON `transfers`.`origin_region` = `states`.`state_id`
+JOIN `proffession` ON `transfers`.`proffession` = `proffession`.`proffession_id`
+WHERE `origin_region` = :origin_region:
+AND `origin_municipality` = :origin_municipality:
+AND `destination_region` = :destination_region:
+AND `destination_municipality` = :destination_municipality:
+AND `user` != :user:
+AND `deleted_flag` = :deleted_flag:
+ORDER BY `transfer_id` ASC', [...], false)
+ 5 APPPATH/Models/TransfersModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Transfers.php(256): App\Models\TransfersModel->searchTransfer([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:08:08 --> The route for "transfersSearch" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('transfersSearch')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Transfers.php(285): redirect('transfersSearch')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:12:15 --> Undefined array key "success"
+in APPPATH/Controllers/Transfers.php on line 269.
+ 1 APPPATH/Controllers/Transfers.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "success"', 'APPPATH/Controllers/Transfers.php', 269)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:14:27 --> Undefined variable $pager
+in APPPATH/Views/transfersSearch.php on line 95.
+ 1 APPPATH/Views/transfersSearch.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH/Views/transfersSearch.php', 95)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfersSearch.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfersSearch', [], true)
+ 5 APPPATH/Controllers/Transfers.php(271): view('transfersSearch', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:14:58 --> Undefined variable $pager
+in APPPATH/Views/transfersSearch.php on line 95.
+ 1 APPPATH/Views/transfersSearch.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH/Views/transfersSearch.php', 95)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/transfersSearch.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('transfersSearch', [], true)
+ 5 APPPATH/Controllers/Transfers.php(271): view('transfersSearch', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:22:34 --> The route for "transfersSearch" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('transfersSearch')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Transfers.php(272): redirect('transfersSearch')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->searchTransfer()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-05 16:26:48 --> Too few arguments to function App\Controllers\Transfers::transfersSearch(), 0 passed in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Transfers.php on line 287.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Transfers->transfersSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transfers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

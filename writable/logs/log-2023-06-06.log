@@ -1,0 +1,87 @@
+ERROR - 2023-06-06 09:36:50 --> mysqli_sql_exception: Table 'citt.rita' doesn't exist in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/RitaModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Login.php(42): App\Models\RitaModel->getRitaRecords('SYSTEM')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-06 09:36:50 --> Table 'citt.rita' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `rita`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rita`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rita`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rita`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 APPPATH/Models/RitaModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(42): App\Models\RitaModel->getRitaRecords('SYSTEM')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-06 09:42:04 --> Undefined array key "view_nida"
+in APPPATH/Views/Layouts/main.php on line 104.
+ 1 APPPATH/Views/Layouts/main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_nida"', 'APPPATH/Views/Layouts/main.php', 104)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(28): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-06 10:10:30 --> Undefined array key "view_members"
+in APPPATH/Views/Layouts/main.php on line 117.
+ 1 APPPATH/Views/Layouts/main.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_members"', 'APPPATH/Views/Layouts/main.php', 117)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(28): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-06 10:11:14 --> Undefined array key "view_events"
+in APPPATH/Views/Layouts/main.php on line 143.
+ 1 APPPATH/Views/Layouts/main.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_events"', 'APPPATH/Views/Layouts/main.php', 143)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(28): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-06 10:13:56 --> Undefined array key "view_events"
+in APPPATH/Views/Layouts/main.php on line 143.
+ 1 APPPATH/Views/Layouts/main.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_events"', 'APPPATH/Views/Layouts/main.php', 143)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(28): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

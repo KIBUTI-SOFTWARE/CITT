@@ -1,0 +1,217 @@
+CRITICAL - 2023-07-14 15:51:09 --> Undefined array key "user"
+in APPPATH/Controllers/Projects.php on line 126.
+ 1 APPPATH/Controllers/Projects.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Projects.php', 126)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->addProject()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:00:55 --> Unsupported operand types: float + array
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 5616.
+ 1 VENDORPATH/tecnickcom/tcpdf/tcpdf.php(5139): TCPDF->getCellCode([...], 5.291667, 'ROOTPATH/public', 0, 0, 'ROOTPATH/public', false, 'ROOTPATH/public', 0, true, 'T', 'M')
+ 2 APPPATH/Controllers/Profile.php(266): TCPDF->Cell([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:02:03 --> Unsupported operand types: float + array
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 5616.
+ 1 VENDORPATH/tecnickcom/tcpdf/tcpdf.php(5139): TCPDF->getCellCode([...], 5.291667, 'ROOTPATH/public', 0, 0, 'ROOTPATH/public', false, 'ROOTPATH/public', 0, true, 'T', 'M')
+ 2 APPPATH/Controllers/Profile.php(268): TCPDF->Cell([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:02:07 --> Unsupported operand types: float + array
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 5616.
+ 1 VENDORPATH/tecnickcom/tcpdf/tcpdf.php(5139): TCPDF->getCellCode([...], 5.291667, 'ROOTPATH/public', 0, 0, 'ROOTPATH/public', false, 'ROOTPATH/public', 0, true, 'T', 'M')
+ 2 APPPATH/Controllers/Profile.php(268): TCPDF->Cell([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:02:40 --> Call to undefined method TCPDF::SetWidths()
+in APPPATH/Controllers/Profile.php on line 235.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:03:19 --> Unsupported operand types: array * float
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 11409.
+ 1 APPPATH/Controllers/Profile.php(235): TCPDF->setLineWidth([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:04:34 --> Unsupported operand types: array * float
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 11409.
+ 1 APPPATH/Controllers/Profile.php(235): TCPDF->setLineWidth([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:04:39 --> Unsupported operand types: array * float
+in VENDORPATH/tecnickcom/tcpdf/tcpdf.php on line 11409.
+ 1 APPPATH/Controllers/Profile.php(235): TCPDF->setLineWidth([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->getCV()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:28:46 --> Call to undefined method App\Models\ProjectsModel::updateMember
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Projects.php(356): CodeIgniter\Model->__call('updateMember', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->deleteProject()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:32:32 --> Undefined array key "short_name"
+in APPPATH/Views/projects.php on line 75.
+ 1 APPPATH/Views/projects.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "short_name"', 'APPPATH/Views/projects.php', 75)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(63): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:44:32 --> Array to string conversion
+in APPPATH/Views/projects.php on line 77.
+ 1 APPPATH/Views/projects.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/projects.php', 77)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 16:49:58 --> Undefined array key 0
+in APPPATH/Views/projects.php on line 71.
+ 1 APPPATH/Views/projects.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/projects.php', 71)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 17:02:46 --> Undefined variable $regstatus
+in APPPATH/Views/projects.php on line 131.
+ 1 APPPATH/Views/projects.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regstatus', 'APPPATH/Views/projects.php', 131)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 17:52:37 --> Undefined variable $Prototype
+in APPPATH/Views/projects.php on line 128.
+ 1 APPPATH/Views/projects.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Prototype', 'APPPATH/Views/projects.php', 128)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 17:52:47 --> Undefined variable $On Progress
+in APPPATH/Views/projects.php on line 129.
+ 1 APPPATH/Views/projects.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $On Progress', 'APPPATH/Views/projects.php', 129)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 18:17:27 --> Array to string conversion
+in APPPATH/Views/projects.php on line 126.
+ 1 APPPATH/Views/projects.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/projects.php', 126)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(64): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-14 19:00:36 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Reports.php on line 14.
+ 1 APPPATH/Controllers/Reports.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Reports.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-07-14 19:55:11 --> mysqli_sql_exception: Unknown column 'project.project_id' in 'order clause' in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+#7 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Events.php(35): CodeIgniter\BaseModel->paginate(10)
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Events->index()
+#9 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+#10 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-07-14 19:55:11 --> Unknown column 'project.project_id' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `events`
+LEFT JOIN `user` ON `events`.`event_leader` = `user`.`user_id`
+WHERE `events`.`deleted_flag` = 0
+ORDER BY `project`.`project_id` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `events`
+LEFT JOIN `user` ON `events`.`event_leader` = `user`.`user_id`
+WHERE `events`.`deleted_flag` = 0
+ORDER BY `project`.`project_id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `events`
+LEFT JOIN `user` ON `events`.`event_leader` = `user`.`user_id`
+WHERE `events`.`deleted_flag` = 0
+ORDER BY `project`.`project_id` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `events`
+LEFT JOIN `user` ON `events`.`event_leader` = `user`.`user_id`
+WHERE `events`.`deleted_flag` = :events.deleted_flag:
+ORDER BY `project`.`project_id` ASC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH/Controllers/Events.php(35): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

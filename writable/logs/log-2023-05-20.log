@@ -1,0 +1,26 @@
+CRITICAL - 2023-05-20 15:10:05 --> Undefined array key "view_nida"
+in APPPATH/Views/Layouts/main.php on line 104.
+ 1 APPPATH/Views/Layouts/main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_nida"', 'APPPATH/Views/Layouts/main.php', 104)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(50): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-20 15:14:41 --> Undefined array key "view_nida"
+in APPPATH/Views/Layouts/main.php on line 104.
+ 1 APPPATH/Views/Layouts/main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_nida"', 'APPPATH/Views/Layouts/main.php', 104)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(50): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

@@ -1,0 +1,453 @@
+ERROR - 2023-05-28 05:41:23 --> mysqli_sql_exception: Table 'jumanne.project' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/app/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-05-28 05:41:23 --> Table 'jumanne.project' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = :project.deleted_flag:
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', [...], false)
+ 5 APPPATH/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:41:39 --> mysqli_sql_exception: Table 'jumanne.branch' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/app/Models/LoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Login.php(82): App\Models\LoginModel->getUser('system@admin.co...')
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-05-28 05:41:39 --> Table 'jumanne.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = :email:
+OR `phone` = :phone:', [...], false)
+ 5 APPPATH/Models/LoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(82): App\Models\LoginModel->getUser('system@admin.com')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:46:03 --> mysqli_sql_exception: Table 'jumanne.branch' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/app/Models/LoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Login.php(82): App\Models\LoginModel->getUser('system@admin.co...')
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-05-28 05:46:03 --> Table 'jumanne.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = \'system@admin.com\'
+OR `phone` = \'system@admin.com\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+WHERE `email` = :email:
+OR `phone` = :phone:', [...], false)
+ 5 APPPATH/Models/LoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(82): App\Models\LoginModel->getUser('system@admin.com')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:47:38 --> mysqli_sql_exception: Table 'jumanne.project' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/app/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-05-28 05:47:38 --> Table 'jumanne.project' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = :project.deleted_flag:
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', [...], false)
+ 5 APPPATH/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:47:49 --> mysqli_sql_exception: Table 'jumanne.project' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/app/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-05-28 05:47:49 --> Table 'jumanne.project' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = 0
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project`
+LEFT JOIN `branch` ON `project`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `management` ON `project`.`manager` = `management`.`member_id`
+WHERE `project`.`deleted_flag` = :project.deleted_flag:
+ORDER BY `project`.`created_on` DESC, `project`.`branch_id` ASC', [...], false)
+ 5 APPPATH/Models/ProjectsModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(42): App\Models\ProjectsModel->getProjects('SYSTEM')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 05:50:11 --> Call to undefined method App\Models\RitaModel::getRitaRecords
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Login.php(42): CodeIgniter\Model->__call('getRitaRecords', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 05:51:22 --> Undefined array key "branch_name"
+in APPPATH/Views/Layouts/main.php on line 6.
+ 1 APPPATH/Views/Layouts/main.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_name"', 'APPPATH/Views/Layouts/main.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(45): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 05:52:34 --> Undefined array key "short_name"
+in APPPATH/Views/Layouts/main.php on line 7.
+ 1 APPPATH/Views/Layouts/main.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "short_name"', 'APPPATH/Views/Layouts/main.php', 7)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(45): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:53:48 --> mysqli_sql_exception: Unknown column 'branch.deleted_flag' in 'where clause' in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Rita.php(24): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Rita->index()
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-05-28 05:53:48 --> Unknown column 'branch.deleted_flag' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = :branch.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Rita.php(24): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 05:55:41 --> mysqli_sql_exception: Unknown column 'branch.deleted_flag' in 'where clause' in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Rita.php(24): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Rita->index()
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-05-28 05:55:41 --> Unknown column 'branch.deleted_flag' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `rita`
+LEFT JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `branch`.`deleted_flag` = :branch.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Rita.php(24): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 05:59:00 --> Undefined array key "edit_branch"
+in APPPATH/Views/Modals/branches.php on line 124.
+ 1 APPPATH/Views/Modals/branches.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit_branch"', 'APPPATH/Views/Modals/branches.php', 124)
+ 2 APPPATH/Views/rita.php(151): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/rita.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('rita', [], true)
+ 6 APPPATH/Controllers/Rita.php(26): view('rita', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 05:59:36 --> Undefined array key "edit_branch"
+in APPPATH/Views/Modals/branches.php on line 124.
+ 1 APPPATH/Views/Modals/branches.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit_branch"', 'APPPATH/Views/Modals/branches.php', 124)
+ 2 APPPATH/Views/rita.php(50): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/rita.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('rita', [], true)
+ 6 APPPATH/Controllers/Rita.php(26): view('rita', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 06:12:32 --> Undefined array key "edit_branch"
+in APPPATH/Views/Modals/branches.php on line 124.
+ 1 APPPATH/Views/Modals/branches.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit_branch"', 'APPPATH/Views/Modals/branches.php', 124)
+ 2 APPPATH/Views/rita.php(138): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/rita.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('rita', [], true)
+ 6 APPPATH/Controllers/Rita.php(26): view('rita', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 06:13:59 --> Undefined array key "edit_branch"
+in APPPATH/Views/Modals/branches.php on line 124.
+ 1 APPPATH/Views/Modals/branches.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit_branch"', 'APPPATH/Views/Modals/branches.php', 124)
+ 2 APPPATH/Views/rita.php(138): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/rita.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('rita', [], true)
+ 6 APPPATH/Controllers/Rita.php(26): view('rita', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-05-28 06:14:23 --> Undefined array key "edit_branch"
+in APPPATH/Views/Modals/branches.php on line 124.
+ 1 APPPATH/Views/Modals/branches.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit_branch"', 'APPPATH/Views/Modals/branches.php', 124)
+ 2 APPPATH/Views/rita.php(138): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/rita.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('rita', [], true)
+ 6 APPPATH/Controllers/Rita.php(26): view('rita', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Rita->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rita))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-05-28 21:35:26 --> mysqli_sql_exception: Table 'jumanne.branch' doesn't exist in /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/March2023/Jumanne/app/Controllers/Users.php(32): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Users->index()
+#8 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/March2023/Jumanne/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/March2023/Jumanne/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-05-28 21:35:26 --> Table 'jumanne.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `user`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `user`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `user`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `user`.`deleted_flag` = :user.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Users.php(32): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

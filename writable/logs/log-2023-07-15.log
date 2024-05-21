@@ -1,0 +1,416 @@
+CRITICAL - 2023-07-15 05:21:03 --> Undefined array key "event$event_leader"
+in APPPATH/Controllers/Events.php on line 114.
+ 1 APPPATH/Controllers/Events.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "event$event_leader"', 'APPPATH/Controllers/Events.php', 114)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->addEvent()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:21:19 --> Cannot declare class App\Models\ReportsModel, because the name is already in use
+in APPPATH/Models/EventsModel.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 05:22:52 --> Cannot declare class App\Models\ReportsModel, because the name is already in use
+in APPPATH/Models/EventsModel.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-07-15 05:24:27 --> mysqli_sql_exception: Unknown column 'event_title' in 'field list' in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ev...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/app/Models/EventsModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Events.php(133): App\Models\EventsModel->addEvent(Array)
+#6 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Events->addEvent()
+#7 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-07-15 05:24:27 --> Unknown column 'event_title' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `events` (`event_id`, `event_title`, `projects`, `event_leader`, `starts_on`, `ends_on`, `event_description`, `created_by`) VALUES (\'EV230715787803559\', \'TCU Exhibitions\', \'[\\"PR230714273207991\\"]\', \'US230713785105618\', \'2023-07-15\', \'2023-07-23\', \'\\"TCU Exhibitons Held in Daressalaam.\\"\', \'US221202353908764\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `events` (`event_id`, `event_title`, `projects`, `event_leader`, `starts_on`, `ends_on`, `event_description`, `created_by`) VALUES (\'EV230715787803559\', \'TCU Exhibitions\', \'[\\"PR230714273207991\\"]\', \'US230713785105618\', \'2023-07-15\', \'2023-07-23\', \'\\"TCU Exhibitons Held in Daressalaam.\\"\', \'US221202353908764\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `events` (`event_id`, `event_title`, `projects`, `event_leader`, `starts_on`, `ends_on`, `event_description`, `created_by`) VALUES (\'EV230715787803559\', \'TCU Exhibitions\', \'[\\"PR230714273207991\\"]\', \'US230713785105618\', \'2023-07-15\', \'2023-07-23\', \'\\"TCU Exhibitons Held in Daressalaam.\\"\', \'US221202353908764\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `events` (`event_id`, `event_title`, `projects`, `event_leader`, `starts_on`, `ends_on`, `event_description`, `created_by`) VALUES (:event_id:, :event_title:, :projects:, :event_leader:, :starts_on:, :ends_on:, :event_description:, :created_by:)', [...], false)
+ 5 APPPATH/Models/EventsModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Events.php(133): App\Models\EventsModel->addEvent([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->addEvent()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:24:53 --> Array to string conversion
+in APPPATH/Views/events.php on line 73.
+ 1 APPPATH/Views/events.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/events.php', 73)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/events.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('events', [], true)
+ 5 APPPATH/Controllers/Events.php(46): view('events', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:25:33 --> Undefined variable $project_stage
+in APPPATH/Views/events.php on line 83.
+ 1 APPPATH/Views/events.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $project_stage', 'APPPATH/Views/events.php', 83)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/events.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('events', [], true)
+ 5 APPPATH/Controllers/Events.php(46): view('events', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:25:49 --> Cannot access offset of type string on string
+in APPPATH/Views/Modals/events.php on line 79.
+ 1 APPPATH/Views/events.php(137): include()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/events.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('events', [], true)
+ 5 APPPATH/Controllers/Events.php(46): view('events', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:49:55 --> Undefined array key "project_title"
+in APPPATH/Views/events.php on line 78.
+ 1 APPPATH/Views/events.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_title"', 'APPPATH/Views/events.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/events.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('events', [], true)
+ 5 APPPATH/Controllers/Events.php(46): view('events', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 05:50:26 --> Array to string conversion
+in APPPATH/Views/events.php on line 78.
+ 1 APPPATH/Views/events.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/events.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/events.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('events', [], true)
+ 5 APPPATH/Controllers/Events.php(46): view('events', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-07-15 06:03:34 --> mysqli_sql_exception: Table 'citt.event' doesn't exist in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Reports.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Reports->index()
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-07-15 06:03:34 --> Table 'citt.event' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `event` ON `reports`.`event` = `events`.`event_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `event` ON `reports`.`event` = `events`.`event_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `event` ON `reports`.`event` = `events`.`event_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `event` ON `reports`.`event` = `events`.`event_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = :reports.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Reports.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 06:06:34 --> Undefined variable $managersModel
+in APPPATH/Controllers/Reports.php on line 35.
+ 1 APPPATH/Controllers/Reports.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $managersModel', 'APPPATH/Controllers/Reports.php', 35)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 07:51:51 --> Invalid file: galleries.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('galleries.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('galleries', [], true)
+ 3 APPPATH/Controllers/Gallery.php(46): view('galleries', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 08:15:30 --> The route for "galleries" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('galleries')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Gallery.php(124): redirect('galleries')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->addGallery()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 08:15:46 --> Undefined variable $projects
+in APPPATH/Views/galleries.php on line 72.
+ 1 APPPATH/Views/galleries.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projects', 'APPPATH/Views/galleries.php', 72)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/galleries.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('galleries', [], true)
+ 5 APPPATH/Controllers/Gallery.php(48): view('galleries', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 08:17:30 --> Undefined variable $event
+in APPPATH/Views/galleries.php on line 81.
+ 1 APPPATH/Views/galleries.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Views/galleries.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/galleries.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('galleries', [], true)
+ 5 APPPATH/Controllers/Gallery.php(48): view('galleries', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 08:22:42 --> Call to undefined method App\Models\GalleryModel::updateGallery
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Gallery.php(299): CodeIgniter\Model->__call('updateGallery', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->deleteGallery()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-07-15 08:23:11 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `gallery...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `gallery...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `gallery...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `gallery...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/app/Models/GalleryModel.php(52): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Gallery.php(299): App\Models\GalleryModel->updateGallery(Array, 'EV2307152226060...')
+#6 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Gallery->deleteGallery()
+#7 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-07-15 08:23:11 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `gallery` SET `status` = 0, `deleted_flag` = 1, `deleted_on` = \'2023-07-15 08:23:11\', `deleted_by` = \'US221202353908764\'
+WHERE `event_id` = \'EV230715222606058\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `gallery` SET `status` = 0, `deleted_flag` = 1, `deleted_on` = \'2023-07-15 08:23:11\', `deleted_by` = \'US221202353908764\'
+WHERE `event_id` = \'EV230715222606058\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `gallery` SET `status` = 0, `deleted_flag` = 1, `deleted_on` = \'2023-07-15 08:23:11\', `deleted_by` = \'US221202353908764\'
+WHERE `event_id` = \'EV230715222606058\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `gallery` SET `status` = :status:, `deleted_flag` = :deleted_flag:, `deleted_on` = :deleted_on:, `deleted_by` = :deleted_by:
+WHERE `event_id` = :event_id:', [...], false)
+ 5 APPPATH/Models/GalleryModel.php(52): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH/Controllers/Gallery.php(299): App\Models\GalleryModel->updateGallery([...], 'EV230715222606058')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->deleteGallery()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 08:29:42 --> Undefined array key "user"
+in APPPATH/Controllers/Gallery.php on line 26.
+ 1 APPPATH/Controllers/Gallery.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Gallery.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 14:03:17 --> Undefined array key "user"
+in APPPATH/Controllers/Gallery.php on line 26.
+ 1 APPPATH/Controllers/Gallery.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Gallery.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 14:32:26 --> Call to undefined method App\Models\GalleryModel::getPhotosByEventId
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Gallery.php(215): CodeIgniter\Model->__call('getPhotosByEventId', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->addGallery()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 14:34:02 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Views/galleries.php on line 74.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('galleries', [], true)
+ 4 APPPATH/Controllers/Gallery.php(48): view('galleries', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 15:20:59 --> Undefined variable $user_branch
+in APPPATH/Controllers/Reports.php on line 39.
+ 1 APPPATH/Controllers/Reports.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_branch', 'APPPATH/Controllers/Reports.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 15:22:02 --> Undefined variable $user_branch
+in APPPATH/Controllers/Reports.php on line 39.
+ 1 APPPATH/Controllers/Reports.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_branch', 'APPPATH/Controllers/Reports.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 15:51:16 --> Undefined array key "photos[]"
+in APPPATH/Controllers/Gallery.php on line 202.
+ 1 APPPATH/Controllers/Gallery.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photos[]"', 'APPPATH/Controllers/Gallery.php', 202)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->addGallery()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-07-15 16:01:59 --> mysqli_sql_exception: Unknown column 'projects.project_id' in 'on clause' in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Reports.php(36): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Reports->index()
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-07-15 16:01:59 --> Unknown column 'projects.project_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `events` ON `reports`.`report_event` = `events`.`event_id`
+LEFT JOIN `project` ON `reports`.`report_project` = `projects`.`project_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `events` ON `reports`.`report_event` = `events`.`event_id`
+LEFT JOIN `project` ON `reports`.`report_project` = `projects`.`project_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `events` ON `reports`.`report_event` = `events`.`event_id`
+LEFT JOIN `project` ON `reports`.`report_project` = `projects`.`project_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `events` ON `reports`.`report_event` = `events`.`event_id`
+LEFT JOIN `project` ON `reports`.`report_project` = `projects`.`project_id`
+LEFT JOIN `user` ON `reports`.`created_by` = `user`.`user_id`
+WHERE `reports`.`deleted_flag` = :reports.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Reports.php(36): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:23:38 --> array_key_exists(): Argument #2 ($array) must be of type array, CodeIgniter\HTTP\Files\UploadedFile given
+in SYSTEMPATH/HTTP/Files/FileCollection.php on line 120.
+ 1 SYSTEMPATH/HTTP/Files/FileCollection.php(120): array_key_exists('0', Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH/HTTP/Files/FileCollection.php(84): CodeIgniter\HTTP\Files\FileCollection->hasFile('file.0')
+ 3 SYSTEMPATH/HTTP/IncomingRequest.php(741): CodeIgniter\HTTP\Files\FileCollection->getFileMultiple('file.0')
+ 4 SYSTEMPATH/Validation/FileRules.php(53): CodeIgniter\HTTP\IncomingRequest->getFileMultiple('file.0')
+ 5 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\FileRules->uploaded(null, 'file.0', [...], null, 'file')
+ 6 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('file', 'File', null, [...], [...])
+ 7 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH/Controllers/Reports.php(87): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:39:25 --> Undefined array key "project_id"
+in APPPATH/Controllers/Reports.php on line 94.
+ 1 APPPATH/Controllers/Reports.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH/Controllers/Reports.php', 94)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:39:59 --> Undefined array key "project"
+in APPPATH/Controllers/Reports.php on line 94.
+ 1 APPPATH/Controllers/Reports.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH/Controllers/Reports.php', 94)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:40:38 --> Undefined array key "project"
+in APPPATH/Controllers/Reports.php on line 94.
+ 1 APPPATH/Controllers/Reports.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH/Controllers/Reports.php', 94)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:41:52 --> Undefined array key "project_id"
+in APPPATH/Controllers/Reports.php on line 94.
+ 1 APPPATH/Controllers/Reports.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH/Controllers/Reports.php', 94)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 16:42:22 --> Undefined array key "project_id"
+in APPPATH/Controllers/Reports.php on line 94.
+ 1 APPPATH/Controllers/Reports.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH/Controllers/Reports.php', 94)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 18:00:24 --> Undefined array key "description"
+in APPPATH/Controllers/Reports.php on line 104.
+ 1 APPPATH/Controllers/Reports.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'APPPATH/Controllers/Reports.php', 104)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-15 18:12:08 --> Undefined array key "project_id"
+in APPPATH/Controllers/Reports.php on line 100.
+ 1 APPPATH/Controllers/Reports.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH/Controllers/Reports.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->addReport()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

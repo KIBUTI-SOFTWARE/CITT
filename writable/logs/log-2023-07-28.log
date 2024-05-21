@@ -1,0 +1,226 @@
+CRITICAL - 2023-07-28 07:31:45 --> Undefined array key "user"
+in APPPATH/Controllers/Events.php on line 25.
+ 1 APPPATH/Controllers/Events.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Events.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 07:33:52 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 07:34:01 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 07:34:07 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 07:34:36 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:14:11 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:14:13 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:14:35 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:45:36 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:46:41 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:47:32 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:47:43 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 09:48:16 --> Undefined array key "user"
+in APPPATH/Controllers/Colleges.php on line 14.
+ 1 APPPATH/Controllers/Colleges.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Colleges.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:07:42 --> Undefined array key "user"
+in APPPATH/Controllers/Members.php on line 17.
+ 1 APPPATH/Controllers/Members.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Members.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:08:16 --> Undefined array key "user"
+in APPPATH/Controllers/Projects.php on line 22.
+ 1 APPPATH/Controllers/Projects.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Projects.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:15:46 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:16:05 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 17:17:15 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 17:41:10 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 17:42:19 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 17:53:07 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 81.
+ 1 APPPATH/Views/colleges.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 18:01:52 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/colleges.php on line 83.
+ 1 APPPATH/Views/colleges.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/colleges.php', 83)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

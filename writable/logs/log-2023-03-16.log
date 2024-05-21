@@ -1,0 +1,290 @@
+CRITICAL - 2023-03-16 04:21:50 --> Undefined array key "user"
+in APPPATH/Controllers/Users.php on line 21.
+ 1 APPPATH/Controllers/Users.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Users.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 04:31:46 --> Invalid file: Layouts/main.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/main.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 4 APPPATH/Controllers/Users.php(53): view('users', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 05:35:33 --> Class "App\Controllers\BranchesPaginatedModel" not found
+in APPPATH/Controllers/Management.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Management->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 05:46:18 --> Undefined array key "user_id"
+in APPPATH/Controllers/Management.php on line 115.
+ 1 APPPATH/Controllers/Management.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH/Controllers/Management.php', 115)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Management->addMember()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 06:36:15 --> Undefined array key "add_project"
+in APPPATH/Views/projects.php on line 24.
+ 1 APPPATH/Views/projects.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "add_project"', 'APPPATH/Views/projects.php', 24)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(42): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 06:36:39 --> include(Modals/projectes.php): Failed to open stream: No such file or directory
+in APPPATH/Views/projects.php on line 128.
+ 1 APPPATH/Views/projects.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(Modals/projectes.php): Failed to open stream: No such file or directory', 'APPPATH/Views/projects.php', 128)
+ 2 APPPATH/Views/projects.php(128): include()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 6 APPPATH/Controllers/Projects.php(42): view('projects', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 06:47:32 --> Undefined array key "manager_id"
+in APPPATH/Views/Modals/projects.php on line 54.
+ 1 APPPATH/Views/Modals/projects.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "manager_id"', 'APPPATH/Views/Modals/projects.php', 54)
+ 2 APPPATH/Views/projects.php(128): include('APPPATH/Views/Modals/projects.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 6 APPPATH/Controllers/Projects.php(46): view('projects', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-16 06:56:50 --> mysqli_sql_exception: Unknown column 'project_duration' in 'field list' in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Models/ProjectsModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Projects.php(129): App\Models\ProjectsModel->addProject(Array)
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Projects->createProject()
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-03-16 06:56:50 --> Unknown column 'project_duration' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `project` (`project_id`, `branch_id`, `project_name`, `manager`, `nature`, `project_duration`, `created_by`) VALUES (\'PR230316973400683\', \'BR230315203702045\', \'Kupiga Rangi\', \'MB230316789805838\', \'Civil\', \'{\\"from\\":\\"2023-03-16\\",\\"to\\":\\"2023-03-19\\"}\', \'US230315395904818\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `project` (`project_id`, `branch_id`, `project_name`, `manager`, `nature`, `project_duration`, `created_by`) VALUES (\'PR230316973400683\', \'BR230315203702045\', \'Kupiga Rangi\', \'MB230316789805838\', \'Civil\', \'{\\"from\\":\\"2023-03-16\\",\\"to\\":\\"2023-03-19\\"}\', \'US230315395904818\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `project` (`project_id`, `branch_id`, `project_name`, `manager`, `nature`, `project_duration`, `created_by`) VALUES (\'PR230316973400683\', \'BR230315203702045\', \'Kupiga Rangi\', \'MB230316789805838\', \'Civil\', \'{\\"from\\":\\"2023-03-16\\",\\"to\\":\\"2023-03-19\\"}\', \'US230315395904818\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `project` (`project_id`, `branch_id`, `project_name`, `manager`, `nature`, `project_duration`, `created_by`) VALUES (:project_id:, :branch_id:, :project_name:, :manager:, :nature:, :project_duration:, :created_by:)', [...], false)
+ 5 APPPATH/Models/ProjectsModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Projects.php(129): App\Models\ProjectsModel->addProject([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->createProject()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 14:20:27 --> Undefined array key "user"
+in APPPATH/Views/dashboard.php on line 2.
+ 1 APPPATH/Views/dashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/dashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-16 14:21:35 --> mysqli_sql_exception: Table 'pims.employee' doesn't exist in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Employees.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Employees->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-03-16 14:21:35 --> Table 'pims.employee' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `employee`
+LEFT JOIN `branch` ON `employee`.`branch_id` = `branch`.`branch_id`
+WHERE `employee`.`branch_id` = \'BR230315203702045\'
+AND `employee`.`deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `employee`
+LEFT JOIN `branch` ON `employee`.`branch_id` = `branch`.`branch_id`
+WHERE `employee`.`branch_id` = \'BR230315203702045\'
+AND `employee`.`deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `employee`
+LEFT JOIN `branch` ON `employee`.`branch_id` = `branch`.`branch_id`
+WHERE `employee`.`branch_id` = \'BR230315203702045\'
+AND `employee`.`deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `employee`
+LEFT JOIN `branch` ON `employee`.`branch_id` = `branch`.`branch_id`
+WHERE `employee`.`branch_id` = :employee.branch_id:
+AND `employee`.`deleted_flag` = :employee.deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Employees.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 15:20:20 --> Undefined array key "user"
+in APPPATH/Controllers/Employees.php on line 14.
+ 1 APPPATH/Controllers/Employees.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Employees.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 15:20:36 --> Undefined array key "user"
+in APPPATH/Views/dashboard.php on line 2.
+ 1 APPPATH/Views/dashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/dashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 15:28:13 --> Trying to access array offset on value of type null
+in APPPATH/Views/Modals/employees.php on line 96.
+ 1 APPPATH/Views/Modals/employees.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/Modals/employees.php', 96)
+ 2 APPPATH/Views/employees.php(140): include('APPPATH/Views/Modals/employees.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/employees.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('employees', [], true)
+ 6 APPPATH/Controllers/Employees.php(51): view('employees', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 15:28:50 --> Trying to access array offset on value of type null
+in APPPATH/Views/Modals/employees.php on line 96.
+ 1 APPPATH/Views/Modals/employees.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/Modals/employees.php', 96)
+ 2 APPPATH/Views/employees.php(140): include('APPPATH/Views/Modals/employees.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/employees.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('employees', [], true)
+ 6 APPPATH/Controllers/Employees.php(51): view('employees', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 17:58:00 --> Undefined array key "firstname"
+in APPPATH/Controllers/Employees.php on line 233.
+ 1 APPPATH/Controllers/Employees.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Controllers/Employees.php', 233)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->assignEmployeesToProject()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:07:23 --> Undefined variable $employee
+in APPPATH/Controllers/Employees.php on line 237.
+ 1 APPPATH/Controllers/Employees.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'APPPATH/Controllers/Employees.php', 237)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Employees->assignEmployeesToProject()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employees))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:42:50 --> Undefined variable $pager
+in APPPATH/Views/projects.php on line 118.
+ 1 APPPATH/Views/projects.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH/Views/projects.php', 118)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 5 APPPATH/Controllers/Projects.php(192): view('projects', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->viewProjectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:48:18 --> Undefined array key "projectEmployees"
+in APPPATH/Views/projectEmployees.php on line 42.
+ 1 APPPATH/Views/projectEmployees.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projectEmployees"', 'APPPATH/Views/projectEmployees.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projectEmployees.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projectEmployees', [], true)
+ 5 APPPATH/Controllers/Projects.php(57): view('projectEmployees')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->projectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:50:32 --> Undefined array key "projectEmployees"
+in APPPATH/Views/projectEmployees.php on line 42.
+ 1 APPPATH/Views/projectEmployees.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projectEmployees"', 'APPPATH/Views/projectEmployees.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projectEmployees.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projectEmployees', [], true)
+ 5 APPPATH/Controllers/Projects.php(57): view('projectEmployees')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->projectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:50:42 --> Undefined array key "projectEmployees"
+in APPPATH/Views/projectEmployees.php on line 42.
+ 1 APPPATH/Views/projectEmployees.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projectEmployees"', 'APPPATH/Views/projectEmployees.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projectEmployees.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projectEmployees', [], true)
+ 5 APPPATH/Controllers/Projects.php(57): view('projectEmployees')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->projectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 18:54:31 --> Undefined array key "projectEmployees"
+in APPPATH/Views/projectEmployees.php on line 42.
+ 1 APPPATH/Views/projectEmployees.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projectEmployees"', 'APPPATH/Views/projectEmployees.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projectEmployees.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projectEmployees', [], true)
+ 5 APPPATH/Controllers/Projects.php(57): view('projectEmployees')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->projectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 19:08:56 --> Undefined array key "projectEmployees"
+in APPPATH/Views/projectEmployees.php on line 42.
+ 1 APPPATH/Views/projectEmployees.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projectEmployees"', 'APPPATH/Views/projectEmployees.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projectEmployees.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projectEmployees', [], true)
+ 5 APPPATH/Controllers/Projects.php(57): view('projectEmployees')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->projectEmployees()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

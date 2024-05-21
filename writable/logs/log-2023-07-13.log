@@ -1,0 +1,312 @@
+CRITICAL - 2023-07-13 17:06:16 --> Class "App\Models\BranchesModel" not found
+in APPPATH/Controllers/Users.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:08:22 --> Undefined array key "branch_name"
+in APPPATH/Views/users.php on line 68.
+ 1 APPPATH/Views/users.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_name"', 'APPPATH/Views/users.php', 68)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Users.php(37): view('users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:09:36 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Users.php on line 374.
+ 1 APPPATH/Controllers/Users.php(374): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Users.php', 374)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->deleteUser()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:14:02 --> Undefined array key "view_gallery"
+in APPPATH/Views/Layouts/main.php on line 156.
+ 1 APPPATH/Views/Layouts/main.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_gallery"', 'APPPATH/Views/Layouts/main.php', 156)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(28): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:18:08 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Roles.php on line 211.
+ 1 APPPATH/Controllers/Roles.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Roles.php', 211)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->deleteRole()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:18:33 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Roles.php on line 211.
+ 1 APPPATH/Controllers/Roles.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Roles.php', 211)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->deleteRole()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:18:36 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Roles.php on line 211.
+ 1 APPPATH/Controllers/Roles.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Roles.php', 211)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->deleteRole()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 17:33:40 --> Undefined array key "name"
+in APPPATH/Views/Modals/members.php on line 60.
+ 1 APPPATH/Views/Modals/members.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/Modals/members.php', 60)
+ 2 APPPATH/Views/members.php(143): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/members.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('members', [], true)
+ 6 APPPATH/Controllers/Members.php(35): view('members', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 18:49:17 --> syntax error, unexpected token "exit"
+in APPPATH/Controllers/Login.php on line 67.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Login.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Login', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-07-13 18:50:40 --> mysqli_sql_exception: Table 'citt.member' doesn't exist in /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/CITT/app/Models/LoginModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/March2023/CITT/app/Controllers/Login.php(63): App\Models\LoginModel->getMember('migambile25@gma...')
+#6 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#7 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/CITT/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/CITT/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-07-13 18:50:40 --> Table 'citt.member' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `member`
+WHERE `email` = \'migambile25@gmail.com\'
+OR `phone` = \'migambile25@gmail.com\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member`
+WHERE `email` = \'migambile25@gmail.com\'
+OR `phone` = \'migambile25@gmail.com\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member`
+WHERE `email` = \'migambile25@gmail.com\'
+OR `phone` = \'migambile25@gmail.com\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member`
+WHERE `email` = :email:
+OR `phone` = :phone:', [...], false)
+ 5 APPPATH/Models/LoginModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Login.php(63): App\Models\LoginModel->getMember('migambile25@gmail.com')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 18:52:34 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Login.php on line 75.
+ 1 APPPATH/Controllers/Login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Login.php', 75)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 18:59:07 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Login.php on line 75.
+ 1 APPPATH/Controllers/Login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Login.php', 75)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 18:59:29 --> Undefined array key "branch_id"
+in APPPATH/Controllers/Members.php on line 296.
+ 1 APPPATH/Controllers/Members.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_id"', 'APPPATH/Controllers/Members.php', 296)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->deleteMember()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:01:36 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Login.php on line 75.
+ 1 APPPATH/Controllers/Login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Login.php', 75)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:12:32 --> Undefined array key "level"
+in APPPATH/Views/dashboard.php on line 3.
+ 1 APPPATH/Views/dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "level"', 'APPPATH/Views/dashboard.php', 3)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:13:56 --> Undefined array key "level"
+in APPPATH/Views/dashboard.php on line 3.
+ 1 APPPATH/Views/dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "level"', 'APPPATH/Views/dashboard.php', 3)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:14:08 --> Undefined array key "firstname"
+in APPPATH/Views/dashboard.php on line 28.
+ 1 APPPATH/Views/dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/dashboard.php', 28)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:20:16 --> Undefined array key "firstname"
+in APPPATH/Views/dashboard.php on line 33.
+ 1 APPPATH/Views/dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/dashboard.php', 33)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:20:38 --> Undefined array key "firstname"
+in APPPATH/Views/Layouts/main.php on line 301.
+ 1 APPPATH/Views/Layouts/main.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/Layouts/main.php', 301)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:23:14 --> Array to string conversion
+in APPPATH/Views/Layouts/main.php on line 306.
+ 1 APPPATH/Views/Layouts/main.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/Layouts/main.php', 306)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(29): view('dashboard', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:23:31 --> Undefined array key "firstname"
+in APPPATH/Views/profile.php on line 53.
+ 1 APPPATH/Views/profile.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH/Views/profile.php', 53)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(12): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:29:31 --> Undefined array key "user_id"
+in APPPATH/Controllers/Profile.php on line 23.
+ 1 APPPATH/Controllers/Profile.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH/Controllers/Profile.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->passwordUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:32:14 --> Undefined array key "role_id"
+in APPPATH/Controllers/Login.php on line 82.
+ 1 APPPATH/Controllers/Login.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_id"', 'APPPATH/Controllers/Login.php', 82)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:34:46 --> array_push(): Argument #1 ($array) cannot be passed by reference
+in APPPATH/Controllers/Login.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:46:40 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Profile.php on line 63.
+ 1 APPPATH/Controllers/Profile.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Profile.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->passwordUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:49:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Profile.php on line 63.
+ 1 APPPATH/Controllers/Profile.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Profile.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->passwordUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:56:14 --> Undefined array key "password"
+in APPPATH/Controllers/Profile.php on line 97.
+ 1 APPPATH/Controllers/Profile.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH/Controllers/Profile.php', 97)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->passwordUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 19:58:10 --> Undefined array key "password"
+in APPPATH/Controllers/Profile.php on line 95.
+ 1 APPPATH/Controllers/Profile.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH/Controllers/Profile.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->passwordUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-07-13 20:00:16 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Views/projects.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Views/projects.php', 66)
+ 2 APPPATH/Views/projects.php(66): json_decode(null, true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/projects.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('projects', [], true)
+ 6 APPPATH/Controllers/Projects.php(45): view('projects', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

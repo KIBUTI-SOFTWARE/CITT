@@ -1,0 +1,430 @@
+CRITICAL - 2023-03-15 06:35:32 --> Undefined array key "user"
+in APPPATH/Controllers/Branches.php on line 14.
+ 1 APPPATH/Controllers/Branches.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Branches.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 08:39:35 --> Undefined array key "privileges"
+in APPPATH/Views/dashboard.php on line 35.
+ 1 APPPATH/Views/dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "privileges"', 'APPPATH/Views/dashboard.php', 35)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 08:43:38 --> Undefined variable $user
+in APPPATH/Views/dashboard.php on line 16.
+ 1 APPPATH/Views/dashboard.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH/Views/dashboard.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 08:43:45 --> Undefined variable $user
+in APPPATH/Views/dashboard.php on line 16.
+ 1 APPPATH/Views/dashboard.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH/Views/dashboard.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 08:45:17 --> Undefined array key "add_"
+in APPPATH/Views/Layouts/main.php on line 88.
+ 1 APPPATH/Views/Layouts/main.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "add_"', 'APPPATH/Views/Layouts/main.php', 88)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 08:58:05 --> Undefined array key "add_role"
+in APPPATH/Views/Layouts/main.php on line 157.
+ 1 APPPATH/Views/Layouts/main.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "add_role"', 'APPPATH/Views/Layouts/main.php', 157)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('roles', [], true)
+ 6 APPPATH/Controllers/Roles.php(35): view('roles', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 09:01:24 --> Undefined variable $user_priviliges
+in APPPATH/Views/Layouts/main.php on line 157.
+ 1 APPPATH/Views/Layouts/main.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_priviliges', 'APPPATH/Views/Layouts/main.php', 157)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 10:36:11 --> Undefined variable $user_info
+in APPPATH/Views/Modals/branches.php on line 12.
+ 1 APPPATH/Views/Modals/branches.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_info', 'APPPATH/Views/Modals/branches.php', 12)
+ 2 APPPATH/Views/branches.php(112): include('APPPATH/Views/Modals/branches.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/branches.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('branches', [], true)
+ 6 APPPATH/Controllers/Branches.php(35): view('branches', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:14:24 --> Undefined array key "created_by"
+in APPPATH/Controllers/Branches.php on line 101.
+ 1 APPPATH/Controllers/Branches.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_by"', 'APPPATH/Controllers/Branches.php', 101)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->createBranch()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:15:18 --> The route for "branches" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('branches')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Branches.php(155): redirect('branches')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->createBranch()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:16:06 --> Undefined array key "description"
+in APPPATH/Views/branches.php on line 60.
+ 1 APPPATH/Views/branches.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'APPPATH/Views/branches.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/branches.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('branches', [], true)
+ 5 APPPATH/Controllers/Branches.php(35): view('branches', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:57:39 --> Undefined array key "view_role"
+in APPPATH/Views/Layouts/main.php on line 194.
+ 1 APPPATH/Views/Layouts/main.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_role"', 'APPPATH/Views/Layouts/main.php', 194)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('roles', [], true)
+ 6 APPPATH/Controllers/Roles.php(35): view('roles', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:58:13 --> Undefined array key "view_role"
+in APPPATH/Views/Layouts/main.php on line 194.
+ 1 APPPATH/Views/Layouts/main.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_role"', 'APPPATH/Views/Layouts/main.php', 194)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:59:10 --> Undefined array key "view_role"
+in APPPATH/Views/Layouts/main.php on line 194.
+ 1 APPPATH/Views/Layouts/main.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "view_role"', 'APPPATH/Views/Layouts/main.php', 194)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Layouts/main.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main.php', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:01:40 --> Undefined variable $user_privileges
+in APPPATH/Views/roles.php on line 21.
+ 1 APPPATH/Views/roles.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/roles.php', 21)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/roles.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('roles', [], true)
+ 5 APPPATH/Controllers/Roles.php(35): view('roles', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 16:15:10 --> mysqli_sql_exception: Table 'pims.users' doesn't exist in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Users.php(24): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Users->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-03-15 16:15:10 --> Table 'pims.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Users.php(24): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:16:23 --> Undefined array key "user_user"
+in APPPATH/Views/users.php on line 5.
+ 1 APPPATH/Views/users.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_user"', 'APPPATH/Views/users.php', 5)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Users.php(40): view('users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:16:45 --> Undefined array key "user_user"
+in APPPATH/Views/users.php on line 5.
+ 1 APPPATH/Views/users.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_user"', 'APPPATH/Views/users.php', 5)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Users.php(40): view('users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:16:55 --> Undefined array key "name"
+in APPPATH/Views/users.php on line 66.
+ 1 APPPATH/Views/users.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/users.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Users.php(40): view('users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 16:21:39 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Users.php(26): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Users->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-03-15 16:21:39 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+LEFT JOIN `branch` ON `user`.`branch_id` = `branch`.`branch_id`
+LEFT JOIN `role` ON `user`.`role_id` = `role`.`role_id`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Users.php(26): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:43:14 --> Undefined array key "name"
+in APPPATH/Views/Modals/users.php on line 45.
+ 1 APPPATH/Views/Modals/users.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/Modals/users.php', 45)
+ 2 APPPATH/Views/users.php(139): include('APPPATH/Views/Modals/users.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('users', [], true)
+ 6 APPPATH/Controllers/Users.php(54): view('users', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:58:19 --> Undefined array key "name"
+in APPPATH/Views/roles.php on line 62.
+ 1 APPPATH/Views/roles.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/roles.php', 62)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/roles.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('roles', [], true)
+ 5 APPPATH/Controllers/Roles.php(35): view('roles', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 16:59:11 --> Undefined array key "name"
+in APPPATH/Views/roles.php on line 66.
+ 1 APPPATH/Views/roles.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/roles.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/roles.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('roles', [], true)
+ 5 APPPATH/Controllers/Roles.php(35): view('roles', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 17:00:36 --> mysqli_sql_exception: Unknown column 'name' in 'where clause' in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Models/RolesModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Roles.php(107): App\Models\RolesModel->isRoleExisting('Branch Administ...', 'SYSTEM')
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Roles->createRole()
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-03-15 17:00:36 --> Unknown column 'name' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `role`
+WHERE `branch_id` = \'SYSTEM\'
+AND `name` = \'Branch Administrator\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `role`
+WHERE `branch_id` = \'SYSTEM\'
+AND `name` = \'Branch Administrator\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `role`
+WHERE `branch_id` = \'SYSTEM\'
+AND `name` = \'Branch Administrator\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `role`
+WHERE `branch_id` = :branch_id:
+AND `name` = :name:', [...], false)
+ 5 APPPATH/Models/RolesModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Roles.php(107): App\Models\RolesModel->isRoleExisting('Branch Administrator', 'SYSTEM')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->createRole()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 20:07:28 --> Undefined array key "user"
+in APPPATH/Controllers/Branches.php on line 14.
+ 1 APPPATH/Controllers/Branches.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Branches.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 20:18:08 --> CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, array given, called in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php on line 624
+in SYSTEMPATH/Database/BaseBuilder.php on line 2842.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(624): CodeIgniter\Database\BaseBuilder->hasOperator([...])
+ 2 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->join('`user`', [...], 'LEFT ')
+ 3 APPPATH/Controllers/Branches.php(21): CodeIgniter\Model->__call('join', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 20:21:11 --> mysqli_sql_exception: Column 'deleted_flag' in where clause is ambiguous in /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/app/Controllers/Branches.php(30): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Branches->index()
+#8 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+#9 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/OnGoing/New/February 2023/MCCProject_v1/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#12 {main}
+CRITICAL - 2023-03-15 20:21:11 --> Column 'deleted_flag' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `branch`
+JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `branch`
+JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `branch`
+JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `branch`
+JOIN `user` ON `branch`.`branch_id` = `user`.`branch_id`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Branches.php(30): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Branches->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branches))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

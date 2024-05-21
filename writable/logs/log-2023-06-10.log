@@ -1,0 +1,373 @@
+CRITICAL - 2023-06-10 07:28:00 --> Undefined array key "description"
+in APPPATH/Controllers/Colleges.php on line 67.
+ 1 APPPATH/Controllers/Colleges.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'APPPATH/Controllers/Colleges.php', 67)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addCollege()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 07:28:26 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(79): App\Models\CollegesModel->addCollege(Array)
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addCollege()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 07:28:26 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `colleges` (`college_id`, `name`, `short_name`, `others`, `created_by`) VALUES (\'CO230610098004066\', \'College of Information and Communication Technology\', \'CoICT\', \'\\"Test College\\"\', \'US221202353908764\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `colleges` (`college_id`, `name`, `short_name`, `others`, `created_by`) VALUES (\'CO230610098004066\', \'College of Information and Communication Technology\', \'CoICT\', \'\\"Test College\\"\', \'US221202353908764\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `colleges` (`college_id`, `name`, `short_name`, `others`, `created_by`) VALUES (\'CO230610098004066\', \'College of Information and Communication Technology\', \'CoICT\', \'\\"Test College\\"\', \'US221202353908764\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `colleges` (`college_id`, `name`, `short_name`, `others`, `created_by`) VALUES (:college_id:, :name:, :short_name:, :others:, :created_by:)', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Colleges.php(79): App\Models\CollegesModel->addCollege([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addCollege()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 07:28:46 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Views/colleges.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Views/colleges.php', 58)
+ 2 APPPATH/Views/colleges.php(58): json_decode(null, true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 6 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 07:31:11 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Views/colleges.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Views/colleges.php', 58)
+ 2 APPPATH/Views/colleges.php(58): json_decode(null, true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 6 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 07:34:08 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Views/colleges.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Views/colleges.php', 61)
+ 2 APPPATH/Views/colleges.php(61): json_decode(null, true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 6 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 07:35:07 --> Array to string conversion
+in APPPATH/Views/colleges.php on line 67.
+ 1 APPPATH/Views/colleges.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/colleges.php', 67)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 07:35:15 --> Undefined array key "name"
+in APPPATH/Views/colleges.php on line 80.
+ 1 APPPATH/Views/colleges.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/colleges.php', 80)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:02:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1 in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(156): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:02:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610472603958","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610472603958","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610472603958","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610472603958","department_name":"Department of Computer Science and` `Engineering"}` = :{"department_id":"DP230610472603958","department_name":"Department of Computer Science and Engineering"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610472603958","department_name":"Department of Computer Science and Engineering"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(156): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610472603958","department_name":"Department of Computer Science and Engineering"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:02:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1 in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(156): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:02:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610276600819","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610276600819","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610276600819","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610276600819","department_name":"Department of Computer Science and` `Engineering"}` = :{"department_id":"DP230610276600819","department_name":"Department of Computer Science and Engineering"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610276600819","department_name":"Department of Computer Science and Engineering"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(156): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610276600819","department_name":"Department of Computer Science and Engineering"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:05:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1 in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(160): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:05:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610344002909","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610344002909","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610344002909","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610344002909","department_name":"Department of Computer Science and` `Engineering"}` = :{"department_id":"DP230610344002909","department_name":"Department of Computer Science and Engineering"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610344002909","department_name":"Department of Computer Science and Engineering"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(160): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610344002909","department_name":"Department of Computer Science and Engineering"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:06:51 --> Undefined array key "departments"
+in APPPATH/Controllers/Colleges.php on line 147.
+ 1 APPPATH/Controllers/Colleges.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departments"', 'APPPATH/Controllers/Colleges.php', 147)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:07:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1 in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:07:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610389206328","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610389206328","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610389206328","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610389206328","department_name":"Department of Computer Science and` `Engineering"}` = :{"department_id":"DP230610389206328","department_name":"Department of Computer Science and Engineering"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610389206328","department_name":"Department of Computer Science and Engineering"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610389206328","department_name":"Department of Computer Science and Engineering"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:08:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1 in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:08:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`Engineering"}` = ''
+WHERE `college_id` = 'CO230610556604055'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610529202138","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610529202138","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610529202138","department_name":"Department of Computer Science and` `Engineering"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610529202138","department_name":"Department of Computer Science and` `Engineering"}` = :{"department_id":"DP230610529202138","department_name":"Department of Computer Science and Engineering"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610529202138","department_name":"Department of Computer Science and Engineering"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610529202138","department_name":"Department of Computer Science and Engineering"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-06-10 08:08:25 --> mysqli_sql_exception: Unknown column '{"department_id":"DP230610785706345","department_name":"DCE"}' in 'field list' in /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `college...', 0)
+#1 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `college...')
+#2 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `college...')
+#3 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `college...', Array, false)
+#4 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id...', Array)
+#5 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/app/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id...', 'CO2306105566040...')
+#6 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+#7 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+#8 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/March2023/Innovation Web/Innovation3/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-06-10 08:08:25 --> Unknown column '{"department_id":"DP230610785706345","department_name":"DCE"}' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `colleges` SET `{"department_id":"DP230610785706345","department_name":"DCE"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `colleges` SET `{"department_id":"DP230610785706345","department_name":"DCE"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `colleges` SET `{"department_id":"DP230610785706345","department_name":"DCE"}` = \'\'
+WHERE `college_id` = \'CO230610556604055\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `colleges` SET `{"department_id":"DP230610785706345","department_name":"DCE"}` = :{"department_id":"DP230610785706345","department_name":"DCE"}:
+WHERE `college_id` = :college_id:', [...], false)
+ 5 APPPATH/Models/CollegesModel.php(34): CodeIgniter\Database\BaseBuilder->update('{"department_id":"DP230610785706345","department_name":"DCE"}', [...])
+ 6 APPPATH/Controllers/Colleges.php(163): App\Models\CollegesModel->updateCollege('{"department_id":"DP230610785706345","department_name":"DCE"}', 'CO230610556604055')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:08:53 --> Array to string conversion
+in APPPATH/Views/colleges.php on line 77.
+ 1 APPPATH/Views/colleges.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/colleges.php', 77)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/colleges.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('colleges', [], true)
+ 5 APPPATH/Controllers/Colleges.php(31): view('colleges', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:10:01 --> array_merge(): Argument #1 must be of type array, string given
+in APPPATH/Controllers/Colleges.php on line 155.
+ 1 APPPATH/Controllers/Colleges.php(155): array_merge('{"department_id": "DP230610746307854", "department_name": "DCE"}', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:14:02 --> array_combine(): Argument #1 ($keys) must be of type array, int given
+in APPPATH/Controllers/Colleges.php on line 156.
+ 1 APPPATH/Controllers/Colleges.php(156): array_combine(3, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:32:52 --> Unsupported operand types: string + array
+in APPPATH/Controllers/Colleges.php on line 156.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:34:09 --> Undefined variable $newDepartment
+in APPPATH/Controllers/Colleges.php on line 162.
+ 1 APPPATH/Controllers/Colleges.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newDepartment', 'APPPATH/Controllers/Colleges.php', 162)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 08:43:00 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, departments given
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 SYSTEMPATH/Database/MySQLi/Result.php(148): mysqli_result->fetch_object('departments')
+ 2 SYSTEMPATH/Database/BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('departments')
+ 3 SYSTEMPATH/Database/BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('departments')
+ 4 APPPATH/Models/CollegesModel.php(51): CodeIgniter\Database\BaseResult->getResult('departments')
+ 5 APPPATH/Controllers/Colleges.php(145): App\Models\CollegesModel->getDepartment('CO230610556604055')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->addDepartment()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 10:11:02 --> Undefined array key "role_id"
+in APPPATH/Controllers/Login.php on line 76.
+ 1 APPPATH/Controllers/Login.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_id"', 'APPPATH/Controllers/Login.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-06-10 12:47:44 --> Undefined array key "user"
+in APPPATH/Controllers/Members.php on line 14.
+ 1 APPPATH/Controllers/Members.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Members.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

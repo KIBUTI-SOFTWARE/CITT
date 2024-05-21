@@ -1,0 +1,21 @@
+CRITICAL - 2023-07-17 04:55:56 --> Undefined array key "user"
+in APPPATH/Controllers/Members.php on line 17.
+ 1 APPPATH/Controllers/Members.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Members.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:24:35 --> Undefined array key "user"
+in APPPATH/Controllers/Login.php on line 24.
+ 1 APPPATH/Controllers/Login.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Login.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:24:40 --> Undefined array key "user"
+in APPPATH/Controllers/Login.php on line 24.
+ 1 APPPATH/Controllers/Login.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Login.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

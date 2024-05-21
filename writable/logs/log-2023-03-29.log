@@ -1,0 +1,26 @@
+CRITICAL - 2023-03-29 05:49:50 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Login.php on line 192.
+ 1 APPPATH/Controllers/Login.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Login.php', 192)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->forgotPassword1()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-29 05:51:04 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Login.php on line 192.
+ 1 APPPATH/Controllers/Login.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Login.php', 192)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->forgotPassword1()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-29 06:01:04 --> The route for "forgot-password1" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('forgot-password1')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Login.php(213): redirect('forgot-password1')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->forgotPassword1()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

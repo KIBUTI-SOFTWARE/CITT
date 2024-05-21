@@ -1,0 +1,225 @@
+CRITICAL - 2022-12-02 06:34:19 --> Undefined variable $response
+in APPPATH/Views/welcome.php on line 95.
+ 1 APPPATH/Views/welcome.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH/Views/welcome.php', 95)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/welcome.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('welcome', [], true)
+ 5 APPPATH/Controllers/Welcome.php(9): view('welcome')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 06:49:56 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dashboard')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Login.php(68): redirect('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 06:54:32 --> The route for "/dashboard" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/dashboard')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Login.php(19): redirect('/dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 09:06:50 --> Undefined array key "user"
+in APPPATH/Views/dashboard.php on line 2.
+ 1 APPPATH/Views/dashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/dashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 09:07:06 --> Undefined array key "user"
+in APPPATH/Views/dashboard.php on line 2.
+ 1 APPPATH/Views/dashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/dashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 09:07:12 --> Undefined variable $user_details
+in APPPATH/Views/dashboard.php on line 21.
+ 1 APPPATH/Views/dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_details', 'APPPATH/Views/dashboard.php', 21)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 09:46:04 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH/Views/profile.php on line 2.
+ 1 APPPATH/Views/profile.php(2): json_decode([...], true)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(12): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 09:47:05 --> Invalid file: Layouts/main_admin.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/main_admin.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('Layouts/main_admin.php', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 4 APPPATH/Controllers/Profile.php(12): view('profile')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 10:00:44 --> include(Modals/users.php): Failed to open stream: No such file or directory
+in APPPATH/Views/proffessions.php on line 84.
+ 1 APPPATH/Views/proffessions.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(Modals/users.php): Failed to open stream: No such file or directory', 'APPPATH/Views/proffessions.php', 84)
+ 2 APPPATH/Views/proffessions.php(84): include()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/proffessions.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('proffessions', [], true)
+ 6 APPPATH/Controllers/Proffessions.php(27): view('proffessions', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Proffessions->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proffessions))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 10:01:28 --> Undefined variable $user_info
+in APPPATH/Views/Modals/proffessions.php on line 12.
+ 1 APPPATH/Views/Modals/proffessions.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_info', 'APPPATH/Views/Modals/proffessions.php', 12)
+ 2 APPPATH/Views/proffessions.php(84): include('APPPATH/Views/Modals/proffessions.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/proffessions.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('proffessions', [], true)
+ 6 APPPATH/Controllers/Proffessions.php(27): view('proffessions', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Proffessions->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proffessions))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 10:26:25 --> Undefined array key "user"
+in APPPATH/Controllers/Proffessions.php on line 11.
+ 1 APPPATH/Controllers/Proffessions.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Proffessions.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Proffessions->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proffessions))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 10:26:33 --> Undefined array key "user"
+in APPPATH/Controllers/Proffessions.php on line 11.
+ 1 APPPATH/Controllers/Proffessions.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Proffessions.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Proffessions->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proffessions))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-02 15:48:57 --> mysqli_sql_exception: Unknown column 'deleted_flag' in 'where clause' in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/CountriesModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Countries.php(17): App\Models\CountriesModel->getCountries('1')
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Countries->index()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-12-02 15:48:57 --> Unknown column 'deleted_flag' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `country`
+WHERE `deleted_flag` = 0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `country`
+WHERE `deleted_flag` = 0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `country`
+WHERE `deleted_flag` = 0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+WHERE `deleted_flag` = :deleted_flag:', [...], false)
+ 5 APPPATH/Models/CountriesModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Countries.php(17): App\Models\CountriesModel->getCountries('1')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 15:49:43 --> Undefined array key "name"
+in APPPATH/Views/countries.php on line 52.
+ 1 APPPATH/Views/countries.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH/Views/countries.php', 52)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/countries.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('countries', [], true)
+ 5 APPPATH/Controllers/Countries.php(22): view('countries', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 15:50:37 --> Undefined array key "phone_code"
+in APPPATH/Views/countries.php on line 53.
+ 1 APPPATH/Views/countries.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_code"', 'APPPATH/Views/countries.php', 53)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/countries.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('countries', [], true)
+ 5 APPPATH/Controllers/Countries.php(22): view('countries', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 16:35:26 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 4 APPPATH/Controllers/Countries.php(46): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 16:36:01 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 4 APPPATH/Controllers/Countries.php(46): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-02 16:51:37 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Model.php on line 224
+in SYSTEMPATH/Database/BaseResult.php on line 96.
+ 1 SYSTEMPATH/Model.php(224): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 3 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 4 APPPATH/Controllers/Countries.php(46): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Countries->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Countries))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

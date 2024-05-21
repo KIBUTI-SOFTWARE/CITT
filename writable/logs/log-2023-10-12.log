@@ -1,0 +1,21 @@
+CRITICAL - 2023-10-12 18:55:31 --> Undefined array key "user"
+in APPPATH/Controllers/Colleges.php on line 14.
+ 1 APPPATH/Controllers/Colleges.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Colleges.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Colleges->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colleges))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 18:56:29 --> Undefined array key "user"
+in APPPATH/Controllers/Gallery.php on line 26.
+ 1 APPPATH/Controllers/Gallery.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Gallery.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 18:57:30 --> Undefined array key "user"
+in APPPATH/Controllers/Reports.php on line 18.
+ 1 APPPATH/Controllers/Reports.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Reports.php', 18)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

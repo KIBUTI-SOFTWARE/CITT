@@ -1,0 +1,173 @@
+CRITICAL - 2023-08-16 08:59:05 --> Undefined array key "user"
+in APPPATH/Controllers/Members.php on line 17.
+ 1 APPPATH/Controllers/Members.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Members.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:07:30 --> Undefined array key "user"
+in APPPATH/Views/profile-update.php on line 2.
+ 1 APPPATH/Views/profile-update.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/profile-update.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile-update.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile-update', [], true)
+ 5 APPPATH/Controllers/Profile.php(21): view('profile-update')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->profileUpdate()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:21:50 --> Undefined variable $image
+in APPPATH/Controllers/Members.php on line 311.
+ 1 APPPATH/Controllers/Members.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH/Controllers/Members.php', 311)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->updateMemberPhoto()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:22:36 --> Undefined variable $image
+in APPPATH/Controllers/Members.php on line 311.
+ 1 APPPATH/Controllers/Members.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH/Controllers/Members.php', 311)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->updateMemberPhoto()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:44:45 --> Undefined variable $fileName
+in APPPATH/Controllers/Members.php on line 316.
+ 1 APPPATH/Controllers/Members.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileName', 'APPPATH/Controllers/Members.php', 316)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->updateMemberPhoto()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:48:31 --> Undefined variable $fileName
+in APPPATH/Controllers/Members.php on line 316.
+ 1 APPPATH/Controllers/Members.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileName', 'APPPATH/Controllers/Members.php', 316)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->updateMemberPhoto()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:54:04 --> Undefined variable $file
+in APPPATH/Controllers/Members.php on line 322.
+ 1 APPPATH/Controllers/Members.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Controllers/Members.php', 322)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->updateMemberPhoto()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 10:59:16 --> syntax error, unexpected token "."
+in APPPATH/Controllers/Members.php on line 321.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Members.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Members')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Members')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Members', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 11:42:22 --> Undefined array key "user"
+in APPPATH/Controllers/Members.php on line 17.
+ 1 APPPATH/Controllers/Members.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Members.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Members->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Members))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:40:43 --> Undefined variable $member
+in APPPATH/Views/profile.php on line 50.
+ 1 APPPATH/Views/profile.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $member', 'APPPATH/Views/profile.php', 50)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(16): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:42:50 --> Undefined variable $user_privileges
+in APPPATH/Views/Modals/members.php on line 145.
+ 1 APPPATH/Views/Modals/members.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/Modals/members.php', 145)
+ 2 APPPATH/Views/profile.php(101): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(16): view('profile')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:44:03 --> Undefined variable $user_privileges
+in APPPATH/Views/Modals/members.php on line 145.
+ 1 APPPATH/Views/Modals/members.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/Modals/members.php', 145)
+ 2 APPPATH/Views/profile.php(101): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(16): view('profile')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:44:45 --> Undefined variable $user_privileges
+in APPPATH/Views/Modals/members.php on line 145.
+ 1 APPPATH/Views/Modals/members.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/Modals/members.php', 145)
+ 2 APPPATH/Views/profile.php(101): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(16): view('profile')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:45:42 --> Undefined variable $user_privileges
+in APPPATH/Views/Modals/members.php on line 145.
+ 1 APPPATH/Views/Modals/members.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/Modals/members.php', 145)
+ 2 APPPATH/Views/profile.php(95): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(16): view('profile')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 12:45:45 --> Undefined variable $user_privileges
+in APPPATH/Views/Modals/members.php on line 145.
+ 1 APPPATH/Views/Modals/members.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_privileges', 'APPPATH/Views/Modals/members.php', 145)
+ 2 APPPATH/Views/profile.php(95): include('APPPATH/Views/Modals/members.php')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(16): view('profile')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 17:10:19 --> Undefined array key "user"
+in APPPATH/Views/profile.php on line 2.
+ 1 APPPATH/Views/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/profile.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(16): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 17:54:33 --> Undefined array key "user"
+in APPPATH/Views/profile.php on line 2.
+ 1 APPPATH/Views/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/profile.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(16): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-16 18:06:07 --> Undefined array key "user"
+in APPPATH/Views/profile.php on line 2.
+ 1 APPPATH/Views/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/profile.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH/Controllers/Profile.php(16): view('profile')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

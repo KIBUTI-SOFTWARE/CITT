@@ -1,0 +1,86 @@
+ERROR - 2022-12-15 08:43:20 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost:8889', 'abdulmujib', 'abdulmujib25', 'etransferv2', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377500')
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377500')
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#10 {main}
+CRITICAL - 2022-12-15 08:43:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+OR `phone` = :phone:', [...], false)
+ 3 APPPATH/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377500')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-15 08:43:33 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost:8889', 'abdulmujib', 'abdulmujib25', 'etransferv2', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377504')
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/app/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377504')
+#5 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Login->login()
+#6 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Applications/MAMP/htdocs/OnGoing/New/eTransferv2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#10 {main}
+CRITICAL - 2022-12-15 08:43:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+OR `phone` = :phone:', [...], false)
+ 3 APPPATH/Models/LoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Login.php(50): App\Models\LoginModel->getUser('0745377504')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->login()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

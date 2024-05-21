@@ -1,0 +1,21 @@
+CRITICAL - 2023-07-19 11:15:36 --> Undefined array key "user"
+in APPPATH/Controllers/Projects.php on line 22.
+ 1 APPPATH/Controllers/Projects.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Projects.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 11:16:04 --> Undefined array key "user"
+in APPPATH/Controllers/Projects.php on line 22.
+ 1 APPPATH/Controllers/Projects.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Projects.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 12:29:38 --> Undefined array key "user"
+in APPPATH/Controllers/Projects.php on line 22.
+ 1 APPPATH/Controllers/Projects.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Projects.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Projects->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projects))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,24 @@
+CRITICAL - 2023-03-01 12:12:50 --> Undefined array key "user"
+in APPPATH/Views/proffessions.php on line 2.
+ 1 APPPATH/Views/proffessions.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/proffessions.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/proffessions.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('proffessions', [], true)
+ 5 APPPATH/Controllers/Proffessions.php(25): view('proffessions', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Proffessions->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proffessions))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-01 12:12:52 --> Undefined array key "user"
+in APPPATH/Views/dashboard.php on line 2.
+ 1 APPPATH/Views/dashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Views/dashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(19): view('dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

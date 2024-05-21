@@ -1,0 +1,35 @@
+CRITICAL - 2023-08-05 08:22:13 --> Undefined array key "user"
+in APPPATH/Controllers/Reports.php on line 18.
+ 1 APPPATH/Controllers/Reports.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Reports.php', 18)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 08:22:16 --> Undefined array key "user"
+in APPPATH/Controllers/Reports.php on line 18.
+ 1 APPPATH/Controllers/Reports.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Reports.php', 18)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 08:22:17 --> Undefined array key "user"
+in APPPATH/Controllers/Roles.php on line 14.
+ 1 APPPATH/Controllers/Roles.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Roles.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Roles->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 08:22:19 --> Undefined array key "user"
+in APPPATH/Controllers/Reports.php on line 18.
+ 1 APPPATH/Controllers/Reports.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Reports.php', 18)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reports->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 08:22:20 --> Undefined array key "user"
+in APPPATH/Controllers/Login.php on line 24.
+ 1 APPPATH/Controllers/Login.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH/Controllers/Login.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
